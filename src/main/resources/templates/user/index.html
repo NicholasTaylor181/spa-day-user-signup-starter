@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<head>
+    <meta charset="UTF-8"/>
+    <title th:text="'Hello, ' + ${user.getUsername()} + '!'"></title>
+    <link href="../static/css/styles.css" th:href="@{/css/styles.css}" rel="stylesheet" />
+</head>
+<body>
+    <h2 th:text="'Welcome to your profile, ' + ${user.getUsername()} + '!'"></h2>
+    <a href="/">Service Selection</a>
+</body>
+</html>
